@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meetup Events</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html">
+        <img class="header__logo" src="./images/logo.svg" alt="logo" />
+      </a>
+      <nav class="header__section inputs">
+        <div class="search search__left">
+          <button class="search__button btn btn--text">
+            <img src="./images/search-1.svg" alt="search-svg" />
+          </button>
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Search events"
+          />
+          <button class="search__button btn btn--secondary">
+            <img src="./images/search-2.svg" alt="search-svg" />
+          </button>
+        </div>
+        <div class="search search__right">
+          <div class="search__input">Mountain View, CA</div>
+          <button class="search__button btn btn--secondary">
+            <img src="./images/search-2.svg" alt="search-svg" />
+          </button>
+        </div>
+      </nav>
+      <nav class="header__section btns">
+        <button class="btn btn--text">
+          <img src="./images/world.svg" alt="worls" />
+          English
+        </button>
+        <button class="btn btn--text">Log in</button>
+        <button class="btn btn--primary">Sign up</button>
+      </nav>
+    </header>
+
+    <section class="filter-events">
+      <div class="container">
+        <div class="filter-events__row">
+          <div class="events-list">
+            <h4 class="title__level--4">Events near New York, NY</h4>
+            <h3 class="filter-events--subtitle">Events</h3>
+            <div class="filter-events__filters">
+              <div class="filter-events__filters--content">
+                <div class="filter any-types">
+                  <select class="filter__btn type">
+                    <option disabled selected>Any type</option>
+                  </select>
+                </div>
+                <div class="filter any-distance">
+                  <select class="filter__btn distance">
+                    <option disabled selected>Any distance</option>
+                  </select>
+                </div>
+                <div class="filter any-category">
+                  <select class="filter__btn category">
+                    <option disabled selected>Any category</option>
+                  </select>
+                </div>
+                <button class="btn btn--primary clear">Clear</button>
+              </div>
+            </div>
+            <div class="events__cards--filter">
+              <!-- <div class="card">
+                <div class="card__img--container">
+                  <div class="online__event show">
+                    <img src="./images/event-icons/online.svg" alt="online" />
+                    <span>Online Event</span>
+                  </div>
+                  <img
+                    class="card__img"
+                    src="./images/events-images/img1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card__description">
+                  <h4 class="card__title">Day Trading Idea and Strategy</h4>
+                  <h5 class="card__type-distance">
+                    Business <span class="distance">(5 km)</span>
+                  </h5>
+                  <div class="card__date">
+                    <img
+                      class="card__date-icon"
+                      src="./images/event-icons/date.svg"
+                      alt="date"
+                    />
+                    <time class="card__fulldate" datetime="2024-04-18"
+                      >Mon, Mar 18 · 7:00 PM PDT</time
+                    >
+                  </div>
+                  <div class="card__participants">
+                    <div class="card__participants--going">
+                      <img src="./images/event-icons/check.svg" alt="check" />
+                      <span class="card__participants--going--text"
+                        >1 going</span
+                      >
+                    </div>
+                    <div class="card__participants--type">
+                      <img src="./images/event-icons/free.svg" alt="check" />
+                      <span class="card__participants--type--text">Free</span>
+                    </div>
+                  </div>
+                  <div class="online__event--mob">
+                    <img
+                      class="online__event--mob--icon"
+                      src="./images/event-icons/online.svg"
+                      alt="online"
+                    />
+                    <span>Online Event</span>
+                  </div>
+
+                  <div class="card__attendees--mob">
+                    <span class="card__attendees--mob--text">attendees 99</span>
+                    <img
+                      class="card__attendees--mob--icon"
+                      src="./images/event-icons/up-icon.svg"
+                      alt="up"
+                    />
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="map-section">
+            <div class="map-container">
+              <img
+                class="map-container--img"
+                src="./images/map-thumbnail.png"
+                alt="map"
+              />
+              <button class="btn close">
+                <img src="./images/event-icons/close.svg" alt="close" />
+              </button>
+
+              <button class="btn btn--primary--outline map-btn">
+                Browse in map
+                <img src="./images/event-icons/expandMapIcon.svg" alt="map" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer__header">
+          <p>Create your own Meetup group.</p>
+          <button class="btn btn--outline">Get Started</button>
+        </div>
+
+        <div class="footer__links"></div>
+
+        <div class="footer__folow">
+          <h6>Folow us</h6>
+          <div class="footer__folow--content">
+            <ul class="footer__sites"></ul>
+            <div class="footer__apps">
+              <a href="#">
+                <img
+                  class="footer__apps--img"
+                  src="./images/Google Play.png"
+                  alt="Google Play"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer__apps--img"
+                  src="./images/App Store.png"
+                  alt="App Store"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="footer__items--container desctop">
+          <li><a class="footer__items--link" href="#">© 2024 Meetup</a></li>
+          <li><a class="footer__items--link" href="#">Terms of Service</a></li>
+          <li><a class="footer__items--link" href="#">Privacy Policy</a></li>
+          <li>
+            <a class="footer__items--link" href="#"
+              >Do Not Sell or Share My Personal Data</a
+            >
+          </li>
+          <li><a class="footer__items--link" href="#">Cookie Policy</a></li>
+          <li><a class="footer__items--link" href="#">Help</a></li>
+        </ul>
+        <ul class="footer__items--container mobile">
+          <li><a class="footer__items--link" href="#">© 2024 Meetup</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

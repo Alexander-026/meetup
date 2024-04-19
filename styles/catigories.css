@@ -1,0 +1,43 @@
+.categories {
+    margin-bottom: 64px;
+}
+
+.categories__row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 16px;
+}
+
+.categories__item {
+    height: 112px;
+    border-radius: 8px;
+    background-color: #97CAD114;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    min-width: 80px;
+
+}
+
+.categories__item--text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .categories__row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .categories__row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+}

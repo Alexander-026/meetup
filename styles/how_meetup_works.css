@@ -1,0 +1,64 @@
+.how-meetup-works {
+    margin-bottom: 60px;
+}
+
+.how-meetup-works__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.how-meetup-works__item {
+    background-color: #97CAD114;
+    border-radius: 8px;
+    padding: 32px 124px 24px 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    width: 50%;
+}
+
+.how-meetup-works__item--title,
+.how-meetup-works__item--text,
+.how-meetup-works__item--link {
+    margin-bottom: 16px;
+    color: #212121;
+    line-height: 24px;
+    text-align: left;
+}
+
+.how-meetup-works__item--title {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.how-meetup-works__item--text {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.how-meetup-works__item--link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #00798A;
+}
+
+.how-meetup-works__item--link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+    .how-meetup-works__row {
+        flex-direction: column;
+    }
+    .how-meetup-works__item {
+        padding: 14px 80px 20px 15px;
+        width: 100%;
+    }
+
+}

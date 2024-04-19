@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meetup</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a class="header__logo--link" href="./index.html">
+          <img class="header__logo--img" src="./images/logo.svg" alt="logo" />
+        </a>
+      </div>
+
+      <nav class="header__section inputs">
+        <div class="search search__left">
+          <button class="search__button btn btn--text">
+            <img src="./images/search-1.svg" alt="search-svg" />
+          </button>
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Search events"
+          />
+          <button class="search__button btn btn--secondary">
+            <img src="./images/search-2.svg" alt="search-svg" />
+          </button>
+        </div>
+        <div class="search search__right">
+          <div class="search__input">Mountain View, CA</div>
+          <button class="search__button btn btn--secondary">
+            <img src="./images/search-2.svg" alt="search-svg" />
+          </button>
+        </div>
+      </nav>
+      <nav class="header__section btns">
+        <button class="btn btn--text">
+          <img src="./images/world.svg" alt="worls" />
+          English
+        </button>
+        <button class="btn btn--text">Log in</button>
+        <button class="btn btn--primary">Sign up</button>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="people-platform">
+          <div class="people-platform__content">
+            <h3 class="people-platform__title">
+              The people platform—Where interests become friendships
+            </h3>
+            <p class="people-platform__text">
+              Whatever your interest, from hiking and reading to networking and
+              skill sharing, there are thousands of people who share it on
+              Meetup. Events are happening every day—sign up to join the fun.
+            </p>
+            <button class="btn btn--primary">Join Meetup</button>
+          </div>
+          <div class="people-platform__img--content">
+            <img
+              class="people-platform__img--img"
+              src="./images/people.png"
+              alt="people"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events-section">
+      <div class="container">
+        <div class="events">
+          <div class="events__near">
+            <div class="events__near--col--view">
+              <h4 class="events__near--title">Events near</h4>
+              <button class="btn btn--view">
+                Mountain View, CA
+                <img src="images/edit.svg" alt="edit" />
+              </button>
+            </div>
+            <div class="events__near--col--link">
+              <a class="events__near--link" href="/events.html"
+                >See all events</a
+              >
+            </div>
+          </div>
+          <div class="events__cards near offline-events">
+            <!-- example -->
+            <!-- <div class="card">
+              <div class="card__img--container">
+                <div class="online__event show">
+                  <img src="./images/event-icons/online.svg" alt="online" />
+                  <span>Online Event</span>
+                </div>
+                <img
+                  class="card__img"
+                  src="./images/events-images/img1.png"
+                  alt=""
+                />
+              </div>
+              <div class="card__description">
+                <h4 class="card__title">Day Trading Idea and Strategy</h4>
+                <h5 class="card__type-distance">
+                  Business <span class="distance">(5 km)</span>
+                </h5>
+                <div class="card__date">
+                  <img
+                    class="card__date-icon"
+                    src="./images/event-icons/date.svg"
+                    alt="date"
+                  />
+                  <time class="card__fulldate" datetime="2024-04-18"
+                    >Mon, Mar 18 · 7:00 PM PDT</time
+                  >
+                </div>
+                <div class="card__participants">
+                  <div class="card__participants--going">
+                    <img src="./images/event-icons/check.svg" alt="check" />
+                    <span class="card__participants--going--text">1 going</span>
+                  </div>
+                  <div class="card__participants--type">
+                    <img src="./images/event-icons/free.svg" alt="check" />
+                    <span class="card__participants--type--text">Free</span>
+                  </div>
+                </div>
+                <div class="online__event--mob">
+                  <img
+                    class="online__event--mob--icon"
+                    src="./images/event-icons/online.svg"
+                    alt="online"
+                  />
+                  <span>Online Event</span>
+                </div>
+
+                <div class="card__attendees--mob">
+                  <span class="card__attendees--mob--text">attendees 99</span>
+                  <img
+                    class="card__attendees--mob--icon"
+                    src="./images/event-icons/up-icon.svg"
+                    alt="up"
+                  />
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="events">
+          <div class="events__near">
+            <div class="events__near--col--view">
+              <h4 class="events__near--title">Upcoming online events</h4>
+            </div>
+            <div class="events__near--col--link">
+              <a class="events__near--link" href="/events.html"
+                >See all events</a
+              >
+            </div>
+          </div>
+          <div class="events__cards near online-events"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="meetup">
+      <div class="container">
+        <div class="meetup__row">
+          <div class="meetup__content">
+            <h4 class="title__level--4">Join Meetup</h4>
+            <img
+              class="meetup__foto--mobile"
+              src="./images/meetup.png"
+              alt="meetup"
+            />
+            <p class="text">
+              People use Meetup to meet new people, learn new things, find
+              support, get out of their comfort zones, and pursue their
+              passions, together. Membership is free.
+            </p>
+            <button class="meetup__btn btn btn--secondary">Sign up</button>
+          </div>
+          <div class="meetup__foto--container desctop">
+            <img class="meetup__foto" src="./images/meetup.png" alt="meetup" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h4 class="title__level--4">Explore top categories</h4>
+        <div class="categories__row"></div>
+      </div>
+    </section>
+
+    <section class="cities">
+      <div class="container">
+        <h4 class="title__level--4">Popular cities on Meetup</h4>
+        <p class="text">
+          Looking for fun things to do near you? See what Meetup organizers are
+          planning in cities around the country.
+        </p>
+        <div class="cities__row"></div>
+      </div>
+    </section>
+
+    <section class="how-meetup-works">
+      <div class="container">
+        <h4 class="title__level--4">How Meetup works</h4>
+
+        <div class="how-meetup-works__row">
+          <div class="how-meetup-works__item">
+            <img src="images/search-meetup.svg" alt="search-meetup" />
+            <div class="how-meetup-works__item--describe">
+              <h5 class="how-meetup-works__item--title">
+                Discover events and groups
+              </h5>
+              <p class="how-meetup-works__item--text">
+                See who's hosting local events for all the things you love
+              </p>
+              <a class="how-meetup-works__item--link" href="#"
+                >Search events and groups</a
+              >
+            </div>
+          </div>
+          <div class="how-meetup-works__item">
+            <img src="images/plus-meetup.svg" alt="plus-meetup" />
+            <div class="how-meetup-works__item--describe">
+              <h5 class="how-meetup-works__item--title">
+                Start a group to host events
+              </h5>
+              <p class="how-meetup-works__item--text">
+                Create your own Meetup group, and draw from a community of
+                millions
+              </p>
+              <a class="how-meetup-works__item--link" href="#">Start a group</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="meetup-friendships">
+      <div class="container">
+        <h4 class="title__level--4">Friendships are made on Meetup</h4>
+        <p class="text">
+          Since 2002, members have used Meetup to make new friends, meet
+          like-minded people, spend time on hobbies, and connect with locals
+          over shared interests. Learn how.
+        </p>
+
+        <div class="meetup-friendships__row">
+          <div class="meetup-friendships__item">
+            <img
+              class="meetup-friendships__item--img"
+              src="images/meetup-friendships-images/img1.png"
+              alt="svsvs"
+            />
+            <h3 class="meetup-friendships__item--title">
+              I Used Meetup to Make Friends at Brunch
+            </h3>
+            <p class="meetup-friendships__item--discribe">
+              New Jersey-based writer and college student Brianna Stryker wanted
+              to meet friends in her hometown. Learn how she used Meetup to make
+              connections by joining a Girls Night Out Meetup group.
+            </p>
+
+            <a class="meetup-friendships__item--link" href="#">Read more</a>
+          </div>
+          <div class="meetup-friendships__item">
+            <img
+              class="meetup-friendships__item--img"
+              src="images/meetup-friendships-images/img2.png"
+              alt="svsvs"
+            />
+            <h3 class="meetup-friendships__item--title">
+              How to Turn Casual Connections into Close Friendships
+            </h3>
+            <p class="meetup-friendships__item--discribe">
+              It’s proven that close friendships are harder to make as an adult.
+              But don’t sweat it: here’s what you can do to simplify the
+              process.
+            </p>
+
+            <a class="meetup-friendships__item--link" href="#">Read more</a>
+          </div>
+          <div class="meetup-friendships__item">
+            <img
+              class="meetup-friendships__item--img"
+              src="images/meetup-friendships-images/img3.png"
+              alt="svsvs"
+            />
+            <h3 class="meetup-friendships__item--title">
+              Do You Have the “Right” Number of Friends?
+            </h3>
+            <p class="meetup-friendships__item--discribe">
+              Studies from around the world have tried to help people answer
+              this question. Learn about the three tiers of friendship and how
+              to fulfill them.
+            </p>
+            <a class="meetup-friendships__item--link" href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__header">
+          <p>Create your own Meetup group.</p>
+          <button class="btn btn--outline">Get Started</button>
+        </div>
+
+        <div class="footer__links"></div>
+
+        <div class="footer__folow">
+          <h6>Folow us</h6>
+          <div class="footer__folow--content">
+            <ul class="footer__sites"></ul>
+            <div class="footer__apps">
+              <a href="#">
+                <img
+                  class="footer__apps--img"
+                  src="./images/Google Play.png"
+                  alt="Google Play"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer__apps--img"
+                  src="./images/App Store.png"
+                  alt="App Store"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="footer__items--container desctop">
+          <li>© 2024 Meetup</li>
+          <li><a class="footer__items--link" href="#">Terms of Service</a></li>
+          <li><a class="footer__items--link" href="#">Privacy Policy</a></li>
+          <li>
+            <a class="footer__items--link" href="#"
+              >Do Not Sell or Share My Personal Data</a
+            >
+          </li>
+          <li><a class="footer__items--link" href="#">Cookie Policy</a></li>
+          <li><a class="footer__items--link" href="#">Help</a></li>
+        </ul>
+        <ul class="footer__items--container mobile">
+          <li>© 2024 Meetup</li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

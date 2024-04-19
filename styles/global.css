@@ -1,0 +1,108 @@
+@import url('./container.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    color: #212121;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 5px;
+    transition: background .1s linear;
+    cursor: pointer;
+    height: 36px;
+    font-size: 14px;
+}
+
+.btn--primary {
+    background-color: #00798A;
+    color: #FFFFFF;
+}
+
+.btn--primary--outline {
+    background: #FFFFFF;
+    color: #00798A;
+    border: 2px solid #00798A;
+}
+
+.btn--primary--outline:hover {
+    background: #c8c8c8;
+}
+
+.btn--primary:hover {
+    background-color: #054a54;
+}
+
+.btn--secondary {
+    background-color: #F65858;
+}
+
+.btn--secondary:hover {
+    background-color: #d53a3a;
+}
+
+
+
+.btn--text:hover {
+    background: lightgray;
+}
+
+.btn--outline {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.btn--outline:hover {
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+.btn--view {
+    background-color: #97CAD11F;
+    color: #00798A;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+.btn--view:hover {
+    background-color: #5098a01f;
+}
+
+
+.title__level--4 {
+    color: #212121;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.text {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.row {}

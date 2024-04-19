@@ -1,0 +1,79 @@
+.meetup-friendships {
+    margin-bottom: 60px;
+}
+
+.meetup-friendships__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+
+}
+
+.meetup-friendships__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33.33%;
+}
+
+.meetup-friendships__item--img {
+    width: 100%;
+    height: 191.5px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.meetup-friendships__item--title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #212121;
+}
+
+.meetup-friendships__item--discribe {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #707070;
+    margin-bottom: 16px;
+}
+
+.meetup-friendships__item--link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #00798A;
+
+}
+
+.meetup-friendships__item--link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+    .meetup-friendships__row {
+        flex-direction: column;
+    }
+
+    .meetup-friendships__item {
+        width: 100%;
+    }
+
+    .meetup-friendships__item--title {
+        font-size: 16px;
+        line-height: 26.83px;
+    }
+
+    .meetup-friendships__item--discribe {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .meetup-friendships__item--link {
+        font-size: 12px;
+        line-height: 23px;
+    }
+}
